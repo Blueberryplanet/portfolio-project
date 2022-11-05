@@ -1,7 +1,8 @@
 :root {
     --primary-color: #282323;
     --secondary-color: white;
-    --btn-text-color: #272142;
+    --btn-color: #272142;
+    --second-btn-color: rgb(142, 58, 142);
     --heading-font: 'Playfair Display', serif;
     --default-font: 'Poppins', sans-serif;
 }
@@ -9,48 +10,113 @@
 body {
     font-family: var(--default-font);
     color: var(--secondary-color);
-    text-align: center;
+    background-color: #1B1B1B;
 }
 
 h1 {
     font-size: 96px;
     font-family: var(--heading-font);
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .hero {
     background: var(--primary-color);
-    padding: 160px 20px;
+    padding: 160px 10px;
+    text-align: center;
 }
 
 .hero h2 {
     font-size: 36px;
     font-weight: bold;
+    line-height: 30px;
 }
 
 .hero h3 {
     font-size: 24px;
     font-weight: normal;
-    line-height: 2;
+    line-height: 36px;
 }
 
-.contact-btn {
+.btn {
     text-decoration: none;
-    color: var(--btn-text-color);
     padding: 18px 30px;
     border-radius: 50px;
-    background: var(--secondary-color);
     font-size: 14px;
     font-weight: bold;
     line-height: 27px;
 }
 
+.contact-btn {
+    color: var(--secondary-color);
+    background: var(--second-btn-color);
+
+}
+
 .contact-btn:hover {
     background: var(--secondary-color);
-    color: purple;
+    color: var(--btn-color);
+}
+
+.container {
+    margin: 10px auto;
+}
+
+.container h2 {
+    font-family: var(--heading-font);
+    font-size: 64px;
+    line-height: 85px;
+}
+
+.project-description {
+    padding: 120px 60px;
+}
+
+.description-text {
+    color: var(--secondary-color);
+    opacity: 0.8;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.link-btn {
+    color: var(--btn-color);
+    background: var(--secondary-color);
+}
+
+.link-btn:hover {
+    background: var(--secondary-color);
+    color: var(--second-btn-color);
+    border: 1px solid var(--second-btn-color);
 }
 
 footer {
     background: var(--primary-color);
     padding: 40px 20px;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 44px;
+        line-height: 2;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .container h2 {
+        font-size: 44px;
+    }
+
+
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
 }

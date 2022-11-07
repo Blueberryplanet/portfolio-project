@@ -62,14 +62,14 @@ h1 {
     margin: 10px auto;
 }
 
-.container h2 {
+.project-description {
+    padding: 120px 60px;
+}
+
+.project-description h2 {
     font-family: var(--heading-font);
     font-size: 64px;
     line-height: 85px;
-}
-
-.project-description {
-    padding: 120px 60px;
 }
 
 .description-text {
@@ -91,6 +91,34 @@ h1 {
     border: 1px solid var(--second-btn-color);
 }
 
+.about-hero {
+    padding: 160px 10px;
+}
+
+.about-hero-content {
+    margin: 30px;
+}
+
+.about-hero h1 {
+    font-size: 64px;
+    line-height: 85px;
+}
+
+.about-hero h2 {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about-hero p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about-me-photo {
+    max-width: 550px;
+}
+
 footer {
     background: var(--primary-color);
     padding: 40px 20px;
@@ -99,7 +127,7 @@ footer {
 @media (max-width: 900px) {
     h1 {
         font-size: 44px;
-        line-height: 2;
+        line-height: 56px;
     }
 
     .hero {
@@ -110,13 +138,17 @@ footer {
         font-size: 30px;
     }
 
-    .container h2 {
-        font-size: 44px;
-    }
-
-
     .project-description {
         padding: 0;
         text-align: center;
+    }
+
+    .project-description h2 {
+        font-size: 44px;
+    }
+
+    .about-hero {
+        text-align: center;
+        padding: 0;
     }
 }

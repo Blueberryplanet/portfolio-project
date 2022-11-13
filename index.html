@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JG Portfolio</title>
+    <meta
+      name="description"
+      content="Joanna Goljanek is a front-end engineer based in Poland."
+    />
+    <title>Front-end developer - Joanna Goljanek</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +37,7 @@
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/" class="logo">
+        <a href="/" title="Homepage" class="logo">
           <div class="d-none d-md-block">
             <p>Joanna Goljanek</p>
           </div>
@@ -43,16 +47,16 @@
         </a>
         <ul>
           <li class="active">
-            <a href="/">Home</a>
+            <a href="/" title="Homepage">Home</a>
           </li>
           <li>
-            <a href="/about.html">About</a>
+            <a href="/about.html" title="About Joanna">About</a>
           </li>
           <li>
-            <a href="/work.html">Work</a>
+            <a href="/work.html" title="Joanna's work">Work</a>
           </li>
           <li>
-            <a href="/contact.html">Contact</a>
+            <a href="/contact.html" title="Contact Joanna">Contact</a>
           </li>
         </ul>
       </nav>
@@ -62,7 +66,9 @@
       <h1>Joanna Goljanek</h1>
       <h3 class="mb-5">Front-end developer, based in Poland</h3>
       <div>
-        <a class="btn contact-btn">Contact me</a>
+        <a href="/contact.html" title="Contact Joanna" class="btn contact-btn"
+          >Contact me</a
+        >
       </div>
     </div>
     <div class="container">
@@ -74,7 +80,7 @@
           <img
             src="images/sally-rooney.png"
             class="img-fluid rounded"
-            alt="Project about Sally Rooney"
+            alt="Sally Rooney Project"
           />
         </div>
         <div class="col">
@@ -86,7 +92,10 @@
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
               minima fugiat explicabo eum dolore.
             </p>
-            <a href="#" class="btn link-btn" title="Sally Ronney project"
+            <a
+              href="/work.html"
+              class="btn link-btn"
+              title="Sally Ronney Project"
               >Go to the page</a
             >
           </div>
@@ -102,7 +111,7 @@
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
               minima fugiat explicabo eum dolore.
             </p>
-            <a href="#" class="btn link-btn" title="Weather project"
+            <a href="/work.html" class="btn link-btn" title="Weather Project"
               >Go to the app</a
             >
           </div>
@@ -111,7 +120,7 @@
           <img
             src="images/weather-app.png"
             class="img-fluid rounded"
-            alt="Weather app"
+            alt="Weather Project"
           />
         </div>
       </div>
@@ -124,28 +133,52 @@
           <p>Let's work together!</p>
         </div>
         <div>
-          <a href="/contact.html" class="btn contact-btn mt-lg-3">Contact me</a>
+          <a
+            href="/contact.html"
+            title="Contact Joanna"
+            class="btn contact-btn mt-lg-3"
+            >Contact me</a
+          >
         </div>
       </div>
     </div>
 
     <footer>
       <div class="d-flex justify-content-center mb-4">
-        <a href="mailto:agoljanek@gmail.com" class="email-link">
+        <a
+          href="mailto:agoljanek@gmail.com"
+          title="Email Joanna"
+          class="email-link"
+        >
           agoljanek@gmail.com
         </a>
       </div>
       <div class="d-flex justify-content-center social-links">
-        <a href="https://www.facebook.com/joanna.goljanek/">
+        <a
+          href="https://www.facebook.com/joanna.goljanek/"
+          title="Facebook Profile"
+        >
           <i class="fa-brands fa-square-facebook"></i>
         </a>
-        <a href="https://github.com/Blueberryplanet">
+        <a href="https://github.com/coding-joanna" title="GitHub Profile">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/joanna-goljanek">
+        <a
+          href="https://www.linkedin.com/in/joanna-goljanek"
+          title="LinkedIn Profile"
+        >
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
+      <p class="text-center mt-4">
+        This project was coded by Joanna Goljanek and it's
+        <a
+          href="https://github.com/coding-joanna/portfolio-project"
+          tiitle="Portfolio Project"
+          target="_blank"
+          >open-sourced</a
+        >
+      </p>
     </footer>
   </body>
 </html>

@@ -22,7 +22,7 @@ h1 {
 
 .hero {
     background: var(--primary-color);
-    padding: 160px 10px;
+    padding: 80px 10px;
     text-align: center;
 }
 
@@ -80,19 +80,21 @@ h1 {
     line-height: 30px;
 }
 
-.link-btn {
+.project-description a.link-btn,
+.content a.link-btn {
     color: var(--btn-color);
     background: var(--secondary-color);
 }
 
-.link-btn:hover {
+.project-description a.link-btn:hover,
+.content a.link-btn:hover {
     background: var(--secondary-color);
     color: var(--second-btn-color);
     border: 1px solid var(--second-btn-color);
 }
 
 .content-container {
-    padding: 160px 10px;
+    padding: 60px 10px;
 }
 
 .content {
@@ -122,19 +124,15 @@ h1 {
     line-height: 30px;
 }
 
-.content a {
+.content a.contact-link {
     text-decoration: none;
     color: var(--second-btn-color);
     transition: all 100ms ease-in-out;
 }
 
-.content a:hover {
+.content a.contact-link:hover {
     color: pink;
     opacity: 0.8;
-}
-
-.about-me-photo {
-    max-width: 550px;
 }
 
 .content-work-paragraph {
@@ -226,14 +224,27 @@ footer .social-links a:hover {
     color: var(--second-btn-color);
 }
 
-@media (max-width: 900px) {
-    h1 {
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--second-btn-color);
+    transition: all 100ms ease-in-out;
+}
+
+footer p a:hover {
+    color: pink;
+}
+
+@media (max-width: 992px) {
+
+    h1,
+    .content h1 {
         font-size: 44px;
         line-height: 56px;
-    }
-
-    .hero {
-        padding: 80px 20px;
     }
 
     .hero h2 {
@@ -242,6 +253,11 @@ footer .social-links a:hover {
 
     .container {
         padding-bottom: 40px;
+    }
+
+    .about-me-photo {
+        max-width: 370px;
+
     }
 
     .project-description {
@@ -255,7 +271,8 @@ footer .social-links a:hover {
 
     .content-container {
         text-align: center;
-        padding: 0;
+        padding: 0 0 40px 0;
+
     }
 
     .contact-box {

@@ -55,7 +55,7 @@ h1 {
 
 .contact-btn:hover {
     background: var(--secondary-color);
-    color: var(--btn-color);
+    color: var(--second-btn-color);
 }
 
 .container {
@@ -125,11 +125,16 @@ h1 {
 .content a {
     text-decoration: none;
     color: var(--second-btn-color);
+    transition: all 100ms ease-in-out;
 }
 
 .content a:hover {
     color: pink;
     opacity: 0.8;
+}
+
+.about-me-photo {
+    max-width: 550px;
 }
 
 .content-work-paragraph {
@@ -138,8 +143,47 @@ h1 {
     font-weight: normal;
 }
 
-.about-me-photo {
-    max-width: 550px;
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav p {
+    font-size: 20px;
+    line-height: 42px;
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    opacity: 0.8;
+    transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+    color: var(--second-btn-color);
+}
+
+nav a.logo {
+    opacity: 1;
+}
+
+nav a.logo:hover {
+    color: var(--secondary-color);
 }
 
 footer {

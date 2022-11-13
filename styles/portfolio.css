@@ -186,9 +186,44 @@ nav a.logo:hover {
     color: var(--secondary-color);
 }
 
+.contact-box {
+    padding: 30px 120px;
+}
+
+.contact-box h3 {
+    font-size: 48px;
+    font-family: var(--heading-font);
+}
+
+.contact-box p {
+    margin: 0;
+    opacity: 0.8;
+}
+
 footer {
     background: var(--primary-color);
     padding: 40px 20px;
+}
+
+footer .email-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+
+footer .email-link:hover {
+    color: var(--second-btn-color);
+}
+
+footer .social-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: var(--second-btn-color);
 }
 
 @media (max-width: 900px) {
@@ -205,6 +240,10 @@ footer {
         font-size: 30px;
     }
 
+    .container {
+        padding-bottom: 40px;
+    }
+
     .project-description {
         padding: 0;
         text-align: center;
@@ -217,5 +256,14 @@ footer {
     .content-container {
         text-align: center;
         padding: 0;
+    }
+
+    .contact-box {
+        padding: 30px;
+    }
+
+    .contact-box h3 {
+        font-size: 24px;
+        font-family: var(--heading-font);
     }
 }

@@ -91,29 +91,43 @@ h1 {
     border: 1px solid var(--second-btn-color);
 }
 
-.about-hero {
+.content-container {
     padding: 160px 10px;
 }
 
-.about-hero-content {
+.content {
     margin: 30px;
 }
 
-.about-hero h1 {
+.content h1 {
     font-size: 64px;
     line-height: 85px;
 }
 
-.about-hero h2 {
+.content h2 {
     font-family: var(--heading-font);
     font-size: 20px;
     line-height: 30px;
 }
 
-.about-hero p {
+.content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 20px 0 0;
+    font-family: var(--default-font);
+}
+
+.content p {
     font-size: 16px;
     line-height: 30px;
 }
+
+.content-work-paragraph {
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
 
 .about-me-photo {
     max-width: 550px;
@@ -147,7 +161,7 @@ footer {
         font-size: 44px;
     }
 
-    .about-hero {
+    .content-container {
         text-align: center;
         padding: 0;
     }

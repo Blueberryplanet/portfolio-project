@@ -2,7 +2,7 @@
     --primary-color: #282323;
     --secondary-color: white;
     --btn-color: #272142;
-    --second-btn-color: rgb(142, 58, 142);
+    --second-btn-color: rgb(187, 84, 187);
     --heading-font: 'Playfair Display', serif;
     --default-font: 'Poppins', sans-serif;
 }
@@ -122,12 +122,21 @@ h1 {
     line-height: 30px;
 }
 
+.content a {
+    text-decoration: none;
+    color: var(--second-btn-color);
+}
+
+.content a:hover {
+    color: pink;
+    opacity: 0.8;
+}
+
 .content-work-paragraph {
     font-size: 14px;
     opacity: 0.8;
     font-weight: normal;
 }
-
 
 .about-me-photo {
     max-width: 550px;

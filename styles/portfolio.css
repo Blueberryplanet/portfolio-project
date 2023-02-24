@@ -63,7 +63,7 @@ h1 {
 }
 
 .project-description {
-    padding: 120px 60px;
+    padding: 0px 60px;
 }
 
 .project-description h2 {
@@ -94,7 +94,11 @@ h1 {
 }
 
 .content-container {
-    padding: 60px 10px;
+    padding: 60px 10px 0px 10px;
+}
+
+.content-container-contact-page {
+    padding: 60px 10px 40px 10px;
 }
 
 .content {
@@ -141,6 +145,47 @@ h1 {
     font-weight: normal;
 }
 
+.certificates {
+    padding: 80px 0px;
+}
+
+.certificates h2,
+.skills h2 {
+    font-size: 50px;
+    line-height: 75px;
+    padding-bottom: 20px;
+}
+
+.certificates h3 {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.skills-img-visual {
+    background: #F9F7FE;
+    border: 1px solid rgba(39, 33, 66, 0.1);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    margin: 0 8px;
+    justify-content: center;
+}
+
+.skills-img {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+label {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 8px 0;
+    text-align: center;
+    display: block;
+}
+
 nav {
     padding: 10px 0;
 }
@@ -185,7 +230,7 @@ nav a.logo:hover {
 }
 
 .contact-box {
-    padding: 30px 120px;
+    padding: 60px 120px 30px 120px;
 }
 
 .contact-box h3 {
@@ -282,5 +327,25 @@ footer p a:hover {
     .contact-box h3 {
         font-size: 24px;
         font-family: var(--heading-font);
+    }
+
+    .certificates {
+        padding: 20px 0px;
+    }
+
+    .certificates h2,
+    .skills h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .certificates h3 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 0px;
+    }
+
+    label {
+        font-size: 10px;
     }
 }
